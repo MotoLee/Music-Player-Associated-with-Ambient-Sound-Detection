@@ -62,3 +62,10 @@ Following are the results:
 | Ambience Noise 	|                59%                	|                    10.7%                   	|                  1.2%                 	|                              	|
 
 In conclusion, most of the experiments are close to our expectation. However, the experiment result should be related to time/place. Even at the same place, when we conduct experiments in different time, the results might be very different.
+
+## Conclusion
+
+In this project, we implement an intelligent Android application to enhance users’ experience by monitoring and analyzing surrounding sounds. It includes several techniques to analyze collected sound. Moreover, it utilized the deep learning model to detect whether the sound source around the user is from human or not. With the help of these techniques, our app shows a fair performance on scenario judgement, and our design of music volume adjustment also works well when the scenario changes happen. The performance evaluation shows most of the scenarios are well recognized.
+	
+There are still some challenges which can be improved, especially the detection between crowd human voice and ambient noise. First of all, the deep learning model we use, CNN for keywords detection, might not be the best fit for human sound recognition. There are other models, such as MFCC, may result in better accuracy. Second, the training data for the deep learning model is a key factor. It is the most challenging task for this project to collect enough highly qualified data, which is not just noiseless but also contains only one clear feature. This is also one reason that we choose to use CNN model instead of others that are already adopted in speech recognition. The direction of future work may integrate techniques in natural language processing to better address the difference among multiple types of human voice and ambient noise.
+
