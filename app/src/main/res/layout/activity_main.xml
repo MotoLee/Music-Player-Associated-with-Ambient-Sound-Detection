@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/reset_counter_button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="Reset"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_silence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Silence"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/silence_count"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:paddingLeft="15dp"
+                android:textSize="24sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_single_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Single Voice"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/single_voice_count"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:paddingLeft="15dp"
+                android:textSize="24sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_crowd_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Crowd Voice"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/crowd_voice_count"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:paddingLeft="15dp"
+                android:textSize="24sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_ambience_noise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Ambience Noise"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/ambience_noise_count"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:paddingLeft="15dp"
+                android:textSize="24sp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_play_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="@string/player_play"/>
+
+        <SeekBar
+            android:id="@+id/controller_volume"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:progress="50"
+            android:max="100"
+            />
+
+        <TextView
+            android:id="@+id/text_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tenser_flow_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Start Detection"/>
+
+        <TextView
+            android:id="@+id/timer_tensor_flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
