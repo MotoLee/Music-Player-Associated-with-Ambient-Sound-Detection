@@ -5,10 +5,10 @@ This is our final project for CSE 570. It is an Android app containing a music p
 Our main idea is to make the smartphone periodically listen the ambient sound, identify the environment and respond to user’s music playing experience immediately, automatically, and intelligently. In order to achieve this goal, we plan to build an Android app with smart acoustic controlling function by using machine learning techniques.
 
 ## Workflow diagram
-![alt text](https://github.com/MotoLee/Music-Player-Associated-with-Ambient-Sound-Detection/tree/master/report/workflow.png "workflow")
+![](report/workflow.png?raw=true)
 
 ## Components in the app
-![alt text](https://github.com/MotoLee/Music-Player-Associated-with-Ambient-Sound-Detection/tree/master/report/app_screenshot.png "screenshot")
+![](report/app_screenshot.png?raw=true)
 
 ## Four scenarios are detected
 Four labels — “silence”, “single voice”, “crowd voice”, and “ambient noise” are set to represent the four scenarios that are able to describe user’s most common environment. The difference among these four scenarios is basically upon the sound type, yet not the environment types (e.g. indoor or outdoor). Following are the detailed definition of four labels: 
